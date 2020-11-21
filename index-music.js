@@ -2,7 +2,7 @@ const fs = require('fs');
 const puppeteer = require('puppeteer');
 
 (async () => {
- const browser = await (puppeteer.launch({ headless: false }));
+ const browser = await (puppeteer.launch({ headless: true }));
  const page = await browser.newPage();
  // 进入页面
  await page.goto('https://music.163.com/#');
@@ -68,4 +68,5 @@ const puppeteer = require('puppeteer');
   return ctn;
  });
  console.log(commentList);
+ browser.close();
 })();
