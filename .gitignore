@@ -1,3 +1,4 @@
 node_modules
 *.png
 car*.json
+/com-crawler/data/com-data/
