@@ -9,7 +9,7 @@ let main = (async (browser) => {
     let title = await page.title();
     console.log(title);
     const input_select = '#aqc-search-input';
-    const companyName = '广东飞企互联科技股份有限公司';
+    const companyName = '重庆飞企互连科技有限公司';
     await page.type(input_select, companyName, { delay: 10 });
     await page.keyboard.press('Enter');
     await page.waitFor(3000);
